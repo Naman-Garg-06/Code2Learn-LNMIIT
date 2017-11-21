@@ -20,20 +20,20 @@ void main(){
 	count++;	
 	printf("\n");
 	}
-	int count1=4;
+	count=4;
 	for(row=1;row<=4;row++)
-  {
+  	{
 		num=1;
 		for(sp=1;sp<=row;sp++)
-    {
+		{
 			printf(" ");
 		}
-		for(col=1;col<=4-row+count1;col++)
-    {
+		for(col=1;col<=4-row+count;col++)
+    		{
 			printf("%d",num);
 			num++;
 		}
-	count1--;	
+	count--;	
 	printf("\n");
 	}
 }
