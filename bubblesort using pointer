@@ -9,7 +9,7 @@ void sort(int *add,int n)
       {
         int swap=*(add+j);
         *(add+j)=*(add+j+1);
-        *(add+j+1)=*(add+j);
+        *(add+j+1)=swap;
       }
     }
   }
