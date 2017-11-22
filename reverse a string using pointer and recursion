@@ -1,0 +1,27 @@
+#include<stdio.h>
+void reverse(char *ptr,int len,int k)
+{
+  if(*ptr!='\0')
+  {
+    char ch=*(ptr+len-k-1);
+    printf("%c",ch);
+    ptr++;
+    len--;
+    reverse(ptr,len,k+1);
+  }
+  else
+    return;
+}
+int main()
+{
+  printf("Enter a string:\n");
+  char c[20];
+  gets(c,20,stdin);
+  int len=0;
+  while(c[len]!='\0')
+  {
+    len++;
+  }
+  reverse(&c,len,0);
+    return 0;
+}
