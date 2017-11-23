@@ -1,3 +1,14 @@
+/*This is the pattern for n=9
+*         * 
+ *       *
+* *     * * 
+ * *   * *
+* * * * * * 
+ * *   * *
+* *     * * 
+ *       *
+*         * 
+*/
 #include<stdio.h>
 int main()
 {
