@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int n,k,i;
+	cin>>n>>k;
+	int questionTime=0;
+	for(i=1;i<=n;i++){
+		questionTime=questionTime+(5*i);
+	}
+	if(questionTime+k<=240){
+		cout<<n;
+	}
+	else{
+		//questionTime=0;
+		while(1>0){
+			for(i=n;i>0;i--){
+				questionTime=questionTime-(5*(i));
+				if(questionTime+k<=240){
+					cout<<i-1;
+					goto exit;
+				}
+				else{
+					continue;
+				}
+			}
+		}
+	}
+	exit:
+	return 0;
+}
