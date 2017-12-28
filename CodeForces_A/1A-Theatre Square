@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main(){
+	long long int n,m,a;
+	cin>>n>>m>>a;
+	long long int length;
+	if(n%a==0){
+		length=n/a;
+	}
+	else{
+		length=(n/a)+1;
+	}
+	long long int width;
+	if(m%a==0){
+		width=m/a;
+	}
+	else{
+		width=(m/a)+1;
+	}
+	long long int total;
+	total=length*width;
+	cout<<total<<endl;
+	return 0;
+}
