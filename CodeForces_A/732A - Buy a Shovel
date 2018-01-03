@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int k,r;
+	cin>>k>>r;
+	int key=-1,i;
+	for(i=1;i<10;i++){
+		if((i*k)%10==0){
+			cout<<i;
+			break;
+		}
+		if((i*k)%10==r){
+			key=i;
+			cout<<key;
+			break;
+		}
+	}
+		
+	return 0;
+}
